@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ISTEKRAR Website
+
+A modern website built with Next.js and Tailwind CSS that includes a home page, about page, services page, and contact page.
+
+## Features
+
+- Responsive design for all screen sizes
+- Modern UI with Tailwind CSS
+- Fast performance with Next.js
+- TypeScript for type safety
+- Easy to customize and extend
+
+## Pages
+
+- **Home**: Introduction to the company with a hero section and features
+- **About**: Company background and values
+- **Services**: Detailed information about the offered services
+- **Contact**: Contact form and company information
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (version >= 18.18.0 recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository or download the source code:
+
+```bash
+git clone https://github.com/yourusername/website-istekrar.git
+cd website-istekrar
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To build the site for production:
 
-## Learn More
+```bash
+npm run build
+# or
+yarn build
+```
 
-To learn more about Next.js, take a look at the following resources:
+To start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+# or
+yarn start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Customization
 
-## Deploy on Vercel
+- Update the content in the page files located in `src/app/`
+- Modify the components in `src/components/`
+- Adjust styles in the Tailwind CSS classes or modify the Tailwind config
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js](https://nextjs.org/) - React framework
+- [React](https://reactjs.org/) - JavaScript library for UI
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- [TypeScript](https://www.typescriptlang.org/) - JavaScript with syntax for types
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

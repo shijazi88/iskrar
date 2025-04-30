@@ -3,13 +3,18 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #5850ec;
+  --primary-light: #6875f5;
+  --primary-dark: #5145cd;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-arabic: var(--font-tajawal);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +27,31 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-arabic), Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-tajawal {
+  font-family: var(--font-arabic), Arial, Helvetica, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Enhanced menu typography */
+.nav-menu-item {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: all 0.3s ease;
+}
+
+.nav-menu-item:hover {
+  transform: translateY(-1px);
+}
+
+/* Enhanced heading typography */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  line-height: 1.2;
 }
