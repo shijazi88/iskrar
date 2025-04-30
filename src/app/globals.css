@@ -6,6 +6,7 @@
   --primary: #5850ec;
   --primary-light: #6875f5;
   --primary-dark: #5145cd;
+  --font-family-base: var(--font-tajawal), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 @theme inline {
@@ -27,7 +28,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-arabic), Arial, Helvetica, sans-serif;
+  font-family: var(--font-family-base);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,7 +52,13 @@ body {
 
 /* Enhanced heading typography */
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-tajawal), Arial, Helvetica, sans-serif;
   letter-spacing: -0.02em;
   font-weight: 700;
   line-height: 1.2;
+}
+
+/* Apply Tajawal to all elements by default */
+* {
+  font-family: var(--font-family-base);
 }

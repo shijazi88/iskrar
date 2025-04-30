@@ -6,12 +6,12 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      tajawal: ["var(--font-tajawal)", "sans-serif"],
+      sans: ["var(--font-tajawal)", "var(--font-geist-sans)", "sans-serif"],
+      mono: ["var(--font-geist-mono)", "monospace"],
+    },
     extend: {
-      fontFamily: {
-        tajawal: ["var(--font-tajawal)", "sans-serif"],
-        sans: ["var(--font-geist-sans)", "sans-serif"],
-        mono: ["var(--font-geist-mono)", "monospace"],
-      },
       colors: {
         indigo: {
           50: "#f0f5ff",
