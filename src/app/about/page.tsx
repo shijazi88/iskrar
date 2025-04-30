@@ -10,8 +10,8 @@ export default function About() {
       <section className="relative bg-indigo-800 text-white py-20">
         <div className="absolute inset-0 z-0 opacity-20">
           <Image
-            src="/images/museum-of-future.jpg"
-            alt="متحف المستقبل - دبي"
+            src="/images/dubai-skyline-new.jpg"
+            alt="أفق مدينة دبي"
             fill
             style={{ objectFit: "cover" }}
             priority

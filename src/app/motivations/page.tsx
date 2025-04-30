@@ -9,8 +9,8 @@ export default function Motivations() {
         <div className="absolute inset-0">
           <Image
             className="w-full h-full object-cover"
-            src="/images/dubai-skyline.jpg"
-            alt="مشهد لمدينة دبي"
+            src="/images/Hero Section.png"
+            alt="صورة توضيحية للدوافع"
             width={2000}
             height={1000}
           />

@@ -17,7 +17,7 @@ export default function Biometrics() {
         <div className="absolute inset-0">
           <Image
             className="w-full h-full object-cover"
-            src="/images/biometrics-hero.jpg"
+            src="/images/fingerprint-scan.jpeg"
             alt="تقنيات البصمة ومراقبة السلوك"
             width={2000}
             height={1000}
@@ -262,6 +262,64 @@ export default function Biometrics() {
       </div>
 
       {/* Fingerprint Examples Section */}
+      <div className="bg-gray-50 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="lg:text-center mb-12">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              أمثلة على تقنيات البصمة
+            </h2>
+            <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+              نماذج لتقنيات البصمة المستخدمة في نظامنا لضمان الدقة والأمان
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* First Fingerprint Image */}
+            <div className="bg-white overflow-hidden shadow-lg rounded-lg">
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  نموذج البصمة الأول
+                </h3>
+                <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                  <Image
+                    src="/images/fp2.jpeg"
+                    alt="نموذج البصمة الأول"
+                    width={600}
+                    height={400}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="mt-4 text-gray-600">
+                  تقنية متطورة لقراءة بصمات الأصابع بدقة عالية مع خاصية منع
+                  التزوير
+                </p>
+              </div>
+            </div>
+
+            {/* Second Fingerprint Image */}
+            <div className="bg-white overflow-hidden shadow-lg rounded-lg">
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  نموذج البصمة الثاني
+                </h3>
+                <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                  <Image
+                    src="/images/fp4.png"
+                    alt="نموذج البصمة الثاني"
+                    width={600}
+                    height={400}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="mt-4 text-gray-600">
+                  نظام متكامل لتسجيل وتخزين البصمات وربطها بقواعد البيانات
+                  المؤمنة
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* CTA */}
       <div className="bg-indigo-700">
