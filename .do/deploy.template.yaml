@@ -2,7 +2,7 @@ spec:
   name: website-istekrar
   region: fra
   services:
-    - build_command: npm run build
+    - build_command: npm run download-images && npm run build
       environment_slug: node-js
       github:
         branch: main

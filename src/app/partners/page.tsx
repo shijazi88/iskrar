@@ -10,7 +10,7 @@ export default function Partners() {
       <section className="relative bg-indigo-800 text-white py-20">
         <div className="absolute inset-0 z-0 opacity-20">
           <Image
-            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
+            src="/images/partners-hero.jpg"
             alt="شراكات استقرار"
             fill
             style={{ objectFit: "cover" }}

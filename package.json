@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "npm run download-images && next build",
     "start": "next start",
     "lint": "next lint",
     "deploy:prepare": "echo 'Preparing for DigitalOcean deployment'",
-    "deploy:cleanup": "rm -rf .next/cache"
+    "deploy:cleanup": "rm -rf .next/cache",
+    "download-images": "node download-images.js"
   },
   "dependencies": {
     "next": "15.3.1",

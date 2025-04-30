@@ -9,7 +9,7 @@ export default function Motivations() {
         <div className="absolute inset-0">
           <Image
             className="w-full h-full object-cover"
-            src="https://images.unsplash.com/photo-1675546529278-bc2ac99879b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80"
+            src="/images/dubai-skyline.jpg"
             alt="مشهد لمدينة دبي"
             width={2000}
             height={1000}
@@ -136,7 +136,7 @@ export default function Motivations() {
             <div className="mt-10 lg:mt-0">
               <div className="aspect-w-2 aspect-h-1 rounded-lg overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+                  src="/images/burj-al-arab.jpg"
                   alt="برج العرب - دبي"
                   width={800}
                   height={600}

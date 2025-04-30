@@ -2,7 +2,15 @@
 const nextConfig = {
   images: {
     domains: ["images.unsplash.com"],
-    unoptimized: process.env.NODE_ENV === "production", // This helps with static exports if needed
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "**",
+      },
+    ],
+    // In development, optimize. For DigitalOcean deployment, we need to unoptimize
+    unoptimized: process.env.NODE_ENV === "production",
   },
   // Optimize for production
   reactStrictMode: true,
@@ -13,6 +21,10 @@ const nextConfig = {
   poweredByHeader: false,
   // Production specific settings
   productionBrowserSourceMaps: false,
+  // Allow image optimization for external sources
+  experimental: {
+    externalDir: true,
+  },
 };
 
 module.exports = nextConfig;
