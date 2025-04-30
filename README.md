@@ -2,6 +2,8 @@
 
 A modern website built with Next.js and Tailwind CSS that includes a home page, about page, services page, and contact page.
 
+[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/yourusername/website-istekrar/tree/main)
+
 ## Features
 
 - Responsive design for all screen sizes
@@ -9,6 +11,7 @@ A modern website built with Next.js and Tailwind CSS that includes a home page, 
 - Fast performance with Next.js
 - TypeScript for type safety
 - Easy to customize and extend
+- Ready for deployment on DigitalOcean App Platform
 
 ## Pages
 
@@ -16,6 +19,7 @@ A modern website built with Next.js and Tailwind CSS that includes a home page, 
 - **About**: Company background and values
 - **Services**: Detailed information about the offered services
 - **Contact**: Contact form and company information
+- **Partners**: Information about partnership program
 
 ## Getting Started
 
@@ -68,6 +72,18 @@ npm run start
 # or
 yarn start
 ```
+
+## Deployment
+
+### DigitalOcean App Platform
+
+This project is configured for easy deployment to DigitalOcean App Platform.
+
+1. Click the "Deploy to DO" button at the top of this README
+2. Follow the instructions in the DigitalOcean interface
+3. Your app will be deployed automatically
+
+For more detailed deployment instructions, see [DEPLOY.md](DEPLOY.md).
 
 ## Customization
 

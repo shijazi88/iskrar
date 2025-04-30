@@ -1,0 +1,20 @@
+spec:
+  name: website-istekrar
+  region: fra
+  services:
+    - build_command: npm run build
+      environment_slug: node-js
+      github:
+        branch: main
+        deploy_on_push: true
+        repo: yourusername/website-istekrar
+      health_check:
+        http_path: /
+      http_port: 3000
+      instance_count: 1
+      instance_size_slug: basic-xs
+      name: website-istekrar
+      routes:
+        - path: /
+      run_command: npm start
+      source_dir: /
